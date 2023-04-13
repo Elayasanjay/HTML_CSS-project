@@ -1,0 +1,25 @@
+ try {
+           int r=Integer.parseInt(request.getParameter("rate"));
+           int q=Integer.parseInt(request.getParameter("qty"));
+           
+           out.println("Total :"+(r*q));
+           int g=Integer.parseInt(request.getParameter("gst"));
+           out.println("Gst:"+(t/5));
+           int f=Integer.parseInt(request.getParameter("famt"));
+           out.println("Final Price:"+(r*q/5+(r*q)));
+        
+        }
+
+
+<body >
+     
+      <form action="product" method="post">
+          Product Id:<input type="text" name="Pid"><br><br>
+          Product Name:<input type="text" name="Pname"><br><br>
+          Quantity:<input type="text" name="qty"><br><br>
+          Rate:<input type="text" name="rate"><br><br>
+              <input type="submit" name="btnfnl" value="Total"><br><br>
+             
+                 
+      </form>
+  </body>
